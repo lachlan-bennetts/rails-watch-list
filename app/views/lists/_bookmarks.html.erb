@@ -1,0 +1,12 @@
+<div id="<%= dom_id list %>" class="border p-4">
+  <p>
+    <strong><%= bookmark.title  %></strong>
+    <p><%= bookmark.comment %></p>
+    <p><%= bookmark.overview  %></p>>
+  </p>
+  <% if show_link %>
+  <p>
+    <%= link_to "Show this list", list %>
+  </p>
+  <% end %>
+</div>

@@ -1,0 +1,13 @@
+<% show_link ||= false %>
+
+<div id="<%= dom_id list %>" class="border p-4">
+  <p>
+    <strong>Name:</strong>
+    <%= list.name.capitalize %>
+  </p>
+  <% if show_link %>
+  <p>
+    <%= link_to "Show this list", list %>
+  </p>
+  <% end %>
+</div>
