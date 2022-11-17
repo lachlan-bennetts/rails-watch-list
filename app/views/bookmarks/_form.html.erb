@@ -5,9 +5,13 @@
       <%= f.input :comment %>
       <%= f.input :movie_id  %>
     </div>
-
+  <div class='d-inline'>
     <div class="form-actions">
       <%= f.button :submit, class: "btn btn-primary mt-2"%>
     </div>
-  <% end %>
+  </div>
+    <% end %>
+  <div class='d-inline'>
+    <%= link_to "Back to list", @list, class: 'btn btn-primary mt-2'  %>
+  </div>
 <div>

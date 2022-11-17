@@ -1,0 +1,8 @@
+<div class='container'>
+<h1>Movies<h1>
+<% @movies.each do |movie| %>
+<%= render "movies/movie", movie: movie %>
+<% end %>
+<br>
+<%= link_to "Back to lists", '/lists', class: "btn btn-primary mt-2"  %>
+</div>
